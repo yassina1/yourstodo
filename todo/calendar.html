@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar - TodoList</title>
+    <link rel="stylesheet" href="resources/style.css">
+    <link rel="stylesheet" href="resources/css/calender.css">
+    <link rel="stylesheet" href="resources/css/calendar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="resources/images/to-do-list-svgrepo-com.svg" type="">
+</head>
+<body>
+    <div class="container">
+        <button id="dropdownBtn" class="dropdownBtn">
+            <img id="menuDropdown" src="resources/images/menu-button-of-three-horizontal-lines-svgrepo-com.svg" alt="">
+        </button>
+        
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <div class="menu-content">
+                    <h1>Menu </h1>
+                </div>
+                <input type="text" placeholder="Search" id="searchinput"><br>
+                <div class="tasks">
+                    <span>TASKS</span>
+                    <ul>
+                        <li>
+                            <img src="resources/images/calendar-todo-svgrepo-com.svg" alt="">
+                            <a href="calendar.html">Calendar</a>
+                        </li>
+                        <li>
+                            <img src="resources/images/calendar-todo-svgrepo-com.svg" alt="">
+                            <a href="today.html">Today</a>
+                            <h6>0</h6>
+                        </li>
+                        <li>
+                            <img src="resources/images/calendar-todo-svgrepo-com.svg" alt="">
+                            <a href="index.html">StickyWall</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+
+                <div class="lists">
+                    <h6>LISTS</h6>
+                    <div class="productivityList">
+                        <ul id="listItems">
+                        
+                        </ul>
+                        <input type="text" id="newListName" placeholder="Enter list name" style="display: none;">
+                        <button id="createListBtn" style="display: none;">Create List</button>
+                        <h5 id="addToList">+ Add New List</h5>
+                        
+                    </div>
+           
+                    
+
+                </div>
+
+                <div class="tags">
+                    <h5>TAGS</h5>
+                    <div class="tags-row" id="tagsRow">
+                        <span class="tag tag1" id="tag1"></span>
+
+                    </div>
+                    <input type="text" id="tagName" placeholder="Tags" style="display: none;">
+                    <button id="tagBtn" class="addTag">+ Add Tag</button>
+                </div>
+            </div>
+
+
+        <!-- Main Content -->
+        <main>
+            <div class="calendar-container">
+                <h1>Calendar</h1>
+                <div id="currentDate"></div>
+                <table class="calendar-table">
+                    <thead>
+                        <tr>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendarBody">
+                        <!-- Calendar will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="resources/script.js"></script>
+    <script src="resources/js/calendar.js"></script>
+    <script src="resources/js/sidebar.js"></script>
+</body>
+</html> 
